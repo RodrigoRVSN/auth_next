@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { FormEvent, useContext, useState } from "react";
 import { AuthContext } from "../contexts/AuthContext";
 import styles from "../styles/Home.module.css";
+import { withSSRGuest } from "../utils/withSSRGuest";
 
 const Home: NextPage = () => {
   const { signIn } = useContext(AuthContext);
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
   return (
     <form onSubmit={handleSubmit} className={styles.container}>
       <input
+        type="email"
         placeholder="e-mail"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
@@ -37,3 +39,9 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+export const getServerSideProps = withSSRGuest(async () => {
+  return {
+    props: {},
+  };
+});

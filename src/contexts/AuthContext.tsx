@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useEffect, useState } from "react";
 import Router from "next/router";
-import { api } from "../services/api";
+import { api } from "../services/apiClient";
 
 import { destroyCookie, parseCookies, setCookie } from "nookies";
 
@@ -41,7 +41,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
     const { "authnext.token": token } = parseCookies();
 
     if (token) {
-      console.log("hoi");
       api
         .get("/me")
         .then((res) => {
@@ -49,14 +48,19 @@ export function AuthProvider({ children }: AuthProviderProps) {
           setUser({ email, permissions, roles });
         })
         .catch(() => {
-          signOut();
+          if (process.browser) {
+            signOut();
+          }
         });
     }
   }, []);
 
   async function signIn({ email, password }: CredentialsProps) {
     try {
-      const response = await api.post("/sessions", { email, password });
+      const response = await api.post("/sessions", {
+        email,
+        password,
+      });
 
       const { token, refreshToken, permissions, roles } = response.data;
 
