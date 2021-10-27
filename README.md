@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# auth_next (https://auth_next-rodrigorvsn.vercel.app/)
 
-## Getting Started
+<!--- https://shields.io --->
 
-First, run the development server:
+![GitHub repo size](https://img.shields.io/github/repo-size/rodrigorvsn/auth_next?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/rodrigorvsn/auth_next?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/rodrigorvsn/auth_next?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/rodrigorvsn/auth_next?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/rodrigorvsn/auth_next?style=for-the-badge)
 
-```bash
-npm run dev
-# or
-yarn dev
+___
+<!--- #################### mudar badges #################### --->
+
+
+
+<!--- #################### mudar imagem exemplo #################### --->
+___
+> Site to train next auth management with tokens, refreshTokens, etc.
+___
+## 💻 Prerequisites
+
+- Install LTS Node version.
+<!--- #################### mudar pré-requisitos  ####################--->
+___
+## 🛠 Tools used
+
+- Nextjs
+- Typescript
+- Nookies
+- JWT
+- Axios
+- BroadCaster
+
+<!--- #################### mudar ferramentas #################### --->
+___
+## 🚀 Installing auth_next
+
+To use, follow the steps:
+
+```
+- git clone https://github.com/rodrigorvsn/auth_next.git
+- yarn || npm install
+- yarn dev || npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+___
+## 📫 Contribuiting with auth_next
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To contribue with auth_next, follow the steps:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. Fork this repository.
+2. Create a branch: `git checkout -b <name_branch>`.
+3. Make the changes and confirm: `git commit -m '<message_commit>'`
+4. Send to original repository: `git push origin <main_branch> / <local>`
+5. Send the pull request.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Alternatively, see the GitHub documentation at [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+___
+## 🤝 Contributors
 
-## Learn More
+Made with ❤️ by:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://github.com/rodrigorvsn.png" width="100px;" alt="Foto do Rodrigo Victor no GitHub"/><br>
+        <sub>
+          <b>Rodrigo Victor</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
