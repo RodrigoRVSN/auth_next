@@ -1,4 +1,4 @@
-# auth_next (https://auth_next-rodrigorvsn.vercel.app/)
+# auth_next
 
 <!--- https://shields.io --->
 
@@ -8,7 +8,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/rodrigorvsn/auth_next?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/rodrigorvsn/auth_next?style=for-the-badge)
 
-___
+
 <!--- #################### mudar badges #################### --->
 
 
